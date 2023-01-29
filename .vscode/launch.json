@@ -1,0 +1,34 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "philosophers",
+            "program": "${workspaceFolder}/philo/philo",
+            "args": [
+                "2",
+                "200",
+                "200",
+                "200"
+            ],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            "env": {
+                "PATH": "${env:PATH}"
+            },
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "utest",
+            "program": "${workspaceFolder}/philo/utest",
+            "args": ["DEBUG=1"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            "env": {
+                "PATH": "${env:PATH}"
+            },
+        }
+    ]
+}

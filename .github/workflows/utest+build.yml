@@ -1,0 +1,21 @@
+name: unit test + build
+
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '**'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [macos-latest]
+        swift: ["5.5"]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Make and run unit test
+      run: make test -C ./philo DEBUG=2 && ./philo/utest && make fclean -C ./philo && make -C ./philo && ./philo/philo 2 430 200 200 6 

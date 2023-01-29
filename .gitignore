@@ -1,0 +1,9 @@
+*.o
+*.a
+.DS_Store
+.utest/*.o
+philo/.utest/*.o
+utest
+philosophers
+philo1
+*.log
