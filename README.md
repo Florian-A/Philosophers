@@ -45,7 +45,7 @@ Les tests unitaires s'executent de la façon suivante :
 
 ### Intégration continue :
 
-[![norminette](https://github.com/Florian-A/Philosopher/actions/workflows/norm.yml/badge.svg)](https://github.com/Florian-A/Philosopher/actions/workflows/norm.yml) [![unit test + build](https://github.com/Florian-A/Minishell/actions/workflows/utest+build.yml/badge.svg)](https://github.com/Florian-A/Minishell/actions/workflows/utest+build.yml)
+[![norminette](https://github.com/Florian-A/Philosophers/actions/workflows/norm.yml/badge.svg)](https://github.com/Florian-A/Philosophers/actions/workflows/norm.yml) [![unit test + build](https://github.com/Florian-A/Philosophers/actions/workflows/utest+build.yml/badge.svg)](https://github.com/Florian-A/Philosophers/actions/workflows/utest+build.yml)
 
 ### Correction :
 
